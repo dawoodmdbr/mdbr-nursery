@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./components/Header";
+import LandingSection from "./components/LandingSection";
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
@@ -7,11 +8,11 @@ function App() {
   return (
     <>
       <Header/>
-      {/* <main>
+      <main>
         <LandingSection />
-        <ProductsSection />
+        {/* <ProductsSection /> */}
       </main>
-      {isCartOpen && <CartSidebar onClose={() => setIsCartOpen(false)} />} */}
+      {/* {isCartOpen && <CartSidebar onClose={() => setIsCartOpen(false)} />} */}
     </>
   );
 }
