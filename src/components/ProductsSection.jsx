@@ -8,7 +8,7 @@ const ProductsSection = () => {
                 <h1>Products</h1>
                 <div className='category-blocks'>
                     {products.map((categoryBlock) => (
-                        <div className="category-block" key={categoryBlock.category}>
+                        <div className='category-block' key={categoryBlock.category}>
                             <h2 className='category-title'>{categoryBlock.category}</h2>
                             <div className='products-section'>
                                 {categoryBlock.items.map((plant) => (
@@ -21,7 +21,12 @@ const ProductsSection = () => {
                                                 <p className='price'>Rs. {plant.price}</p>
                                             </div>
                                         </div>
-                                        <button className='add-btn'>Add to Cart</button>
+                                        <button
+                                            className='add-btn'
+                                            onClick={() => addToCart(plant)}
+                                            disabled={cartItems.some((item) => item.id === plant.id)}>
+                                            {cartItems.some((item) => item.id === plant.id) ? "Added" : "Add to Cart"}
+                                        </button>
                                     </div>
                                 ))}
                             </div>
