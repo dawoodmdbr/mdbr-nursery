@@ -1,7 +1,10 @@
 import "./Header.css";
 import { useState, useEffect } from "react";
+import { useCart } from "../context/CartContext";
 
-const Header = () => {
+const Header = ({toggleCart}) => {
+    const { getTotalItems } = useCart();
+
     const [showHeader, setShowHeader] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(window.scrollY);
 
@@ -28,13 +31,13 @@ const Header = () => {
                     <br />
                     NURSERY
                 </a>
-                <a href='#products' className='prod-btn'>
+                <a className='prod-btn'>
                     PRODUCTS
                 </a>
-                <a className='cart' href='#cart'>
+                <div className='cart' onClick={toggleCart}>
                     <div className='cart-img'>🛒</div>
-                    <span className='cart-count'>0</span>
-                </a>
+                    <span className='cart-count'>{getTotalItems()}</span>
+                </div>
             </nav>
         </>
     );

@@ -1,7 +1,10 @@
 import "./ProductsSection.css";
 import products from "../data/Products";
+import { useCart } from "../context/CartContext";
+
 
 const ProductsSection = () => {
+    const { cartItems, addToCart } = useCart();
     return (
         <>
             <section id='products' className='products'>

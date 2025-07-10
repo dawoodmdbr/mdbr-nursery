@@ -85,3 +85,8 @@
     align-items: center;
     font-family: 'Work Sans', sans-serif;
 }
+.cart:hover {
+    transition: all 300ms ease-in-out;
+    color: #39a65b;
+    cursor: pointer;
+}
