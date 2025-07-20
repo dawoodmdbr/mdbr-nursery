@@ -51,7 +51,7 @@
 
 .product-card:hover {
     transition: all 0.3s ease;
-    transform: scale(1.02);
+    transform: scale(1.05);
     box-shadow: 0 0.625rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
@@ -62,8 +62,8 @@
 }
 
 .product-info img {
-    width: 50%;
-    height: 10rem;
+    width: 33%;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     border-radius: 0.5rem;
     flex-shrink: 0;
@@ -77,14 +77,15 @@
     flex: 1;
 }
 
-.product-text h3 {
+.product-text h1 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.25rem;
+    font-size: 2rem;
     color: #222;
     margin-bottom: 0.3rem;
 }
 
 .product-text .desc {
+    margin: 1rem 0;
     font-size: 1rem;
     color: #555;
     font-weight: 400;
@@ -92,7 +93,7 @@
 }
 
 .product-text .price {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #333;
 }

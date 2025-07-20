@@ -1,6 +1,6 @@
 import "./LandingSection.css";
 
-function LandingSection() {
+const LandingSection = ({ onImageLoad }) => {
     return (
         <section id='landing' className='landing'>
             <div className='landing-text'>

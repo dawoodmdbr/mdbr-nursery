@@ -4,8 +4,8 @@ import Header from "./components/Header";
 import LandingSection from "./components/LandingSection";
 import ProductsSection from "./components/ProductsSection";
 import CartSidebar from "./components/CartSidebar";
-import {LineWobble} from "ldrs/react";
-import "ldrs/react/LineWobble.css";
+import {Quantum} from "ldrs/react";
+import "ldrs/react/Quantum.css";
 
 function App() {
     const [isCartOpen, setIsCartOpen] = useState(false);
@@ -14,16 +14,16 @@ function App() {
 
     useEffect(() => {
         setTimeout(() => {
-            fetch("http://localhost:8000/Products")
-            .then((res) => res.json())
-            .then((data) => {
-                setProducts(data);
-                setLoading(false);
-            })
-            .catch((err) => {
-                console.error("Error fetching products:", err);
-                setLoading(false);
-            });
+            fetch("/mdbr-nursery/Products.json")
+                .then((res) => res.json())
+                .then((data) => {
+                    setProducts(data.Products);
+                    setLoading(false);
+                })
+                .catch((err) => {
+                    console.error("Error fetching products:", err);
+                    setLoading(false);
+                });
         }, 1000);
     }, []);
 
@@ -31,7 +31,7 @@ function App() {
         <>
             {loading && (
                 <div className='loader-wrapper'>
-                    <LineWobble size='150' stroke='5' bgOpacity='0.1' speed='1' color='white' />
+                    <Quantum size='95' speed='1.75' color='white' />
                 </div>
             )}
 

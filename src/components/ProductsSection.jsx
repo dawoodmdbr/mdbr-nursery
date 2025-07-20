@@ -2,17 +2,9 @@ import {useState, useEffect} from "react";
 import "./ProductsSection.css";
 import {useCart} from "../context/CartContext";
 
-const ProductsSection = (Products) => {
-    const {cartItems, addToCart} = useCart();
+const ProductsSection = ({ products }) => {
+    const {cartItems, addToCart} = useCart();   
 
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch("http://localhost:8000/Products")
-            .then((res) => res.json())
-            .then((data) => setProducts(data))
-            .catch((err) => console.error("Error fetching products:", err));
-    }, []);
 
     return (
         <>
@@ -28,9 +20,9 @@ const ProductsSection = (Products) => {
                                         <div className='product-info'>
                                             <img src={plant.image} alt={plant.name} />
                                             <div className='product-text'>
-                                                <h3>{plant.name}</h3>
+                                                <h1>{plant.name}</h1>
                                                 <p className='desc'>{plant.description}</p>
-                                                <p className='price'>Rs. {plant.price}</p>
+                                                <h1 className='price'>Rs. {plant.price}</h1>
                                             </div>
                                         </div>
                                         <button
