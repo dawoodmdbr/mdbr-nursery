@@ -1,0 +1,103 @@
+{
+    "Products": [
+        {
+            "category": "Vegetables",
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Carrot Seed",
+                    "description": "",
+                    "price": 1400,
+                    "image": "/images/carrot.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Cucumber Seed",
+                    "description": "",
+                    "price": 500,
+                    "image": "/images/cucumber.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Russet Potato",
+                    "description": "",
+                    "price": 300,
+                    "image": "/images/potato.jpg"
+                }
+            ]
+        },
+        {
+            "category": "Flowers",
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Daisy",
+                    "description": "",
+                    "price": 1000,
+                    "image": "/images/daisy.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Marigold",
+                    "description": "",
+                    "price": 500,
+                    "image": "/images/marigold.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Lily of the Valley",
+                    "description": "",
+                    "price": 300,
+                    "image": "/images/lily.jpg"
+                },
+                {
+                    "id": 4,
+                    "name": "Sunflower",
+                    "description": "",
+                    "price": 500,
+                    "image": "/images/sunflower.jpg"
+                },
+                {
+                    "id": 5,
+                    "name": "Tulip",
+                    "description": "",
+                    "price": 500,
+                    "image": "/images/tulip.jpg"
+                }
+            ]
+        },
+        {
+            "category": "Fruits",
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Strawberry",
+                    "description": "",
+                    "price": 1000,
+                    "image": "/images/strawberry.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Watermelon",
+                    "description": "",
+                    "price": 500,
+                    "image": "/images/watermelon.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Raspberry",
+                    "description": "",
+                    "price": 300,
+                    "image": "/images/raspberry.jpg"
+                },
+                {
+                    "id": 4,
+                    "name": "Apple",
+                    "description": "",
+                    "price": 500,
+                    "image": "/images/apple.jpg"
+                }
+            ]
+        }
+    ]
+}

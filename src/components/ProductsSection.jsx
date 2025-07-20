@@ -1,10 +1,19 @@
+import {useState, useEffect} from "react";
 import "./ProductsSection.css";
-import products from "../data/Products";
-import { useCart } from "../context/CartContext";
+import {useCart} from "../context/CartContext";
 
+const ProductsSection = (Products) => {
+    const {cartItems, addToCart} = useCart();
 
-const ProductsSection = () => {
-    const { cartItems, addToCart } = useCart();
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        fetch("http://localhost:8000/Products")
+            .then((res) => res.json())
+            .then((data) => setProducts(data))
+            .catch((err) => console.error("Error fetching products:", err));
+    }, []);
+
     return (
         <>
             <section id='products' className='products'>
