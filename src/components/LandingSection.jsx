@@ -1,6 +1,6 @@
 import "./LandingSection.css";
 
-const LandingSection = ({ onImageLoad }) => {
+const LandingSection = ({onImageLoad}) => {
     return (
         <section id='landing' className='landing'>
             <div className='landing-text'>
@@ -22,6 +22,6 @@ const LandingSection = ({ onImageLoad }) => {
             </div>
         </section>
     );
-}
+};
 
 export default LandingSection;
