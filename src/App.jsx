@@ -25,10 +25,21 @@ function App() {
                     setLoading(false);
                 });
         }, 1000);
+
+        const cursor = document.getElementById("custom-cursor");
+
+        const moveCursor = (e) => {
+            cursor.style.transform = `translate3d(${e.clientX - 20}px, ${e.clientY - 20}px, 0)`;
+        };
+
+        window.addEventListener("mousemove", moveCursor);
+        return () => window.removeEventListener("mousemove", moveCursor);
     }, []);
 
     return (
         <>
+            <div id='custom-cursor' className='frosted-cursor'></div>
+
             {loading && (
                 <div className='loader-wrapper'>
                     <Quantum size='95' speed='1.75' color='white' />
@@ -39,7 +50,7 @@ function App() {
                 <>
                     <Header toggleCart={() => setIsCartOpen(true)} />
                     <main>
-                        <LandingSection />
+                        <LandingSection onImageLoad={() => setLoading(false)} />
                         <ProductsSection products={products} />
                     </main>
                     {isCartOpen && <div className='backdrop' onClick={() => setIsCartOpen(false)} />}

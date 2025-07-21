@@ -1,8 +1,11 @@
 import "./LandingSection.css";
 
-const LandingSection = ({onImageLoad}) => {
+const LandingSection = ({ onImageLoad }) => {
     return (
         <section id='landing' className='landing'>
+            <div className='landing-image'>
+                <img src='./images/landing-bg.jpg' alt='Landing' onLoad={onImageLoad} onError={onImageLoad} />
+            </div>
             <div className='landing-text'>
                 <h1>MDBR Nursery</h1>
                 <p>

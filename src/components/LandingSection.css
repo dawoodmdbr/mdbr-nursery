@@ -1,56 +1,66 @@
 .landing {
-    padding: 0rem 2rem;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    color: white;
+}
+
+.landing-image {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+
+.landing-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
 }
 
 .landing-text {
-    color: white;
-    height: 55rem;
-    width: 100%;
-    background-image: url("../assets/landing-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-    padding: 0 15rem;
+    max-width: 900px;
+    text-align: center;
+    padding: 0 2rem;
 }
 
 .landing h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-bottom: 1rem;
 }
 
 .landing p {
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.2rem;
-    max-width: 600px;
+    font-size: 1.25rem;
     font-weight: 400;
-    opacity: 0.9;
+    opacity: 0.95;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
 }
 
 .get-started-btn {
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
-    display: inline-block;
-    margin: 2rem;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.3);
-    border: solid 2px white;
-    color: white;
-    padding: 1rem 3rem;
+    padding: 1rem 2.5rem;
     font-size: 1rem;
-    border-radius: 1rem;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 2rem;
+    cursor: none;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 .get-started-btn:hover {
-    transition: all 0.3s ease-in-out;
-    background-color: white;
-    transform: scale(1.05);
-    color: black;
+    /* color: black; */
+    transform: scale(1.1);
 }

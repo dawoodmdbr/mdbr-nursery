@@ -4,11 +4,12 @@
   right: 0;
   height: 100vh;
   width: 360px;
-  background-color: #f7f7f7;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.15);
+  background-color: white;
   padding: 1.5rem;
   z-index: 2000;
   overflow-y: auto;
+  color: black;
 
   /* Slide animation */
   transform: translateX(100%);
@@ -24,9 +25,9 @@
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.5); /* darkness */
-  backdrop-filter: blur(2px);           /* fancy blur */
-  z-index: 999;                         /* under sidebar */
+  background-color: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(2px);           
+  z-index: 999;
 }
 
 
@@ -34,8 +35,7 @@
   background: none;
   border: none;
   font-size: 2rem;
-  color: #333;
-  cursor: pointer;
+  color: black;
   float: right;
 }
 
@@ -76,7 +76,6 @@
   background: #ddd;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .delete-btn {
@@ -84,7 +83,6 @@
   border: none;
   color: crimson;
   font-size: 0.9rem;
-  cursor: pointer;
   margin-top: 0.5rem;
 }
 
@@ -104,7 +102,6 @@
   width: 100%;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
   margin-top: 1rem;
 }
 
@@ -114,5 +111,4 @@
   margin-top: 1rem;
   color: #39a65b;
   text-decoration: underline;
-  cursor: pointer;
 }

@@ -1,64 +1,38 @@
 {
   "Products": [
     {
-      "category": "Vegetables",
-      "items": [
-        {
-          "id": 1,
-          "name": "Carrot Seed",
-          "description": "Golden roots for vibrant meals",
-          "price": 800,
-          "image": "./images/carrot.jpg"
-        },
-        {
-          "id": 2,
-          "name": "Cucumber Seed",
-          "description": "Cool vines with crisp harvest",
-          "price": 100,
-          "image": "./images/cucumber.jpg"
-        },
-        {
-          "id": 3,
-          "name": "Russet Potato",
-          "description": "Earthy richness beneath soft soil",
-          "price": 500,
-          "image": "./images/potato.jpg"
-        }
-      ]
-    },
-    {
       "category": "Flowers",
       "items": [
         {
-          "id": 3,
+          "id": 1,
           "name": "Daisy",
           "description": "Petals of innocence and charm",
           "price": 100,
           "image": "./images/daisy.jpg"
         },
         {
-          "id": 4,
+          "id": 2,
           "name": "Marigold",
           "description": "Radiant bloom with sacred hues",
           "price": 100,
           "image": "./images/marigold.jpg"
         },
         {
-          "id": 5,
+          "id": 3,
           "name": "Lily of the Valley",
           "description": "Fragrant bells of delicate grace",
           "price": 100,
           "image": "./images/lily.jpg"
         },
         {
-          "id": 6,
+          "id": 4,
           "name": "Sunflower",
           "description": "Golden faces chasing warm skies",
           "price": 100,
           "image": "./images/sunflower.jpg"
         },
         {
-          "id": 7,
+          "id": 5,
           "name": "Tulip",
           "description": "Elegant curves in quiet bloom",
           "price": 100,
@@ -70,32 +44,58 @@
       "category": "Fruits",
       "items": [
         {
-          "id": 8,
+          "id": 6,
           "name": "Strawberry",
           "description": "Sweet blush of summer dreams",
           "price": 300,
           "image": "./images/strawberry.jpg"
         },
         {
-          "id": 9,
+          "id": 7,
           "name": "Watermelon",
           "description": "Crimson delight under green armor",
           "price": 200,
           "image": "./images/watermelon.jpg"
         },
         {
-          "id": 10,
+          "id": 8,
           "name": "Raspberry",
           "description": "Tangy jewels kissed by mist",
           "price": 300,
           "image": "./images/raspberry.jpg"
         },
         {
-          "id": 11,
+          "id": 9,
           "name": "Apple",
           "description": "Crisp bite of orchard grace",
           "price": 300,
           "image": "./images/apple.jpg"
+        }
+      ]
+    },
+    {
+      "category": "Vegetables",
+      "items": [
+        {
+          "id": 10,
+          "name": "Carrot Seed",
+          "description": "Golden roots for vibrant meals",
+          "price": 800,
+          "image": "./images/carrot.jpg"
+        },
+        {
+          "id": 11,
+          "name": "Cucumber Seed",
+          "description": "Cool vines with crisp harvest",
+          "price": 100,
+          "image": "./images/cucumber.jpg"
+        },
+        {
+          "id": 12,
+          "name": "Russet Potato",
+          "description": "Earthy richness beneath soft soil",
+          "price": 500,
+          "image": "./images/potato.jpg"
         }
       ]
     }
