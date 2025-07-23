@@ -1,4 +1,4 @@
-body{
+*{
   cursor: none !important;
 }
 
@@ -19,16 +19,26 @@ body{
 
 .frosted-cursor {
   position: fixed;
-  width: 2rem;
-  height: 2rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   pointer-events: none;
   z-index: 3000;
 
   background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px) saturate(100%);
+  backdrop-filter: blur(2px) saturate(100%);
   -webkit-backdrop-filter: blur(8px) saturate(180%);
-  border: 5px solid rgba(0,0,0, 0.5);
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  border: 3px solid rgba(0,0,0, 0.5);
   transition: transform 0.1s ease;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  *{
+    cursor: default !important;
+  }
+  .frosted-cursor {
+    display: none;
+  }
+  
 }

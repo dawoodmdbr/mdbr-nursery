@@ -19,7 +19,7 @@ const LandingSection = ({ onImageLoad }) => {
                             const target = document.getElementById("products");
                             if (target) target.scrollIntoView({behavior: "smooth"});
                         }}>
-                        Explore Collection
+                        Explore<br />Collection
                     </button>
                 </a>
             </div>
