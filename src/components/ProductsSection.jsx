@@ -25,12 +25,12 @@ const ProductsSection = ({ products }) => {
                                                 <h1 className='price'>Rs. {plant.price}</h1>
                                             </div>
                                         </div>
-                                        <button
+                                        <div
                                             className='add-btn'
                                             onClick={() => addToCart(plant)}
                                             disabled={cartItems.some((item) => item.id === plant.id)}>
                                             {cartItems.some((item) => item.id === plant.id) ? "Added" : "Add to Cart"}
-                                        </button>
+                                        </div>
                                     </div>
                                 ))}
                             </div>

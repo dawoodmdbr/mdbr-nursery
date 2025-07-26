@@ -1,4 +1,4 @@
-*{
+* {
   cursor: none !important;
 }
 
@@ -8,7 +8,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #3ba94b;
+  background-color: #3b7f56; /* updated to favorite green */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,20 +25,20 @@
   pointer-events: none;
   z-index: 3000;
 
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(2px) saturate(100%);
-  -webkit-backdrop-filter: blur(8px) saturate(180%);
-  border: 3px solid rgba(0,0,0, 0.5);
+  background: rgba(244, 241, 233, 0.45); /* soft beige glow */
+  backdrop-filter: blur(3px) saturate(140%);
+  -webkit-backdrop-filter: blur(6px) saturate(180%);
+  border: 2px solid rgba(36, 69, 52, 0.4); /* darker tint to match new green */
   transition: transform 0.1s ease;
   transform: translate(-50%, -50%);
 }
 
 @media (max-width: 768px) {
-  *{
+  * {
     cursor: default !important;
   }
+
   .frosted-cursor {
     display: none;
   }
-  
 }
