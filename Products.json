@@ -1,0 +1,384 @@
+{
+    "Products": [
+        {
+            "category": "Flowers",
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Daisy",
+                    "description": "Petals of innocence and charm",
+                    "price": 100,
+                    "image": "./images/daisy.jpg"
+                },
+                {
+                    "id": 2,
+                    "name": "Marigold",
+                    "description": "Radiant bloom with sacred hues",
+                    "price": 100,
+                    "image": "./images/marigold.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Lily of the Valley",
+                    "description": "Fragrant bells of delicate grace",
+                    "price": 100,
+                    "image": "./images/lily.jpg"
+                },
+                {
+                    "id": 4,
+                    "name": "Sunflower",
+                    "description": "Golden faces chasing warm skies",
+                    "price": 100,
+                    "image": "./images/sunflower.jpg"
+                },
+                {
+                    "id": 5,
+                    "name": "Tulip",
+                    "description": "Elegant curves in quiet bloom",
+                    "price": 100,
+                    "image": "./images/tulip.jpg"
+                },
+                {
+                    "id": 6,
+                    "name": "Rose",
+                    "description": "Timeless elegance wrapped in velvet",
+                    "price": 150,
+                    "image": "./images/rose.jpg"
+                },
+                {
+                    "id": 7,
+                    "name": "Orchid",
+                    "description": "Exotic flair in royal bloom",
+                    "price": 200,
+                    "image": "./images/orchid.jpg"
+                },
+                {
+                    "id": 8,
+                    "name": "Lavender",
+                    "description": "Soft purple calm in every stem",
+                    "price": 180,
+                    "image": "./images/lavender.jpg"
+                },
+                {
+                    "id": 9,
+                    "name": "Peony",
+                    "description": "Fluffy layers of spring romance",
+                    "price": 220,
+                    "image": "./images/peony.jpg"
+                }
+            ]
+        },
+        {
+            "category": "Fruits",
+            "items": [
+                {
+                    "id": 10,
+                    "name": "Strawberry",
+                    "description": "Sweet blush of summer dreams",
+                    "price": 300,
+                    "image": "./images/strawberry.jpg"
+                },
+                {
+                    "id": 11,
+                    "name": "Watermelon",
+                    "description": "Crimson delight under green armor",
+                    "price": 200,
+                    "image": "./images/watermelon.jpg"
+                },
+                {
+                    "id": 12,
+                    "name": "Raspberry",
+                    "description": "Tangy jewels kissed by mist",
+                    "price": 300,
+                    "image": "./images/raspberry.jpg"
+                },
+                {
+                    "id": 13,
+                    "name": "Apple",
+                    "description": "Crisp bite of orchard grace",
+                    "price": 300,
+                    "image": "./images/apple.jpg"
+                },
+                {
+                    "id": 14,
+                    "name": "Blueberry",
+                    "description": "Tiny bursts of twilight flavor",
+                    "price": 350,
+                    "image": "./images/blueberry.jpg"
+                },
+                {
+                    "id": 15,
+                    "name": "Peach",
+                    "description": "Fuzzy sweetness from golden boughs",
+                    "price": 250,
+                    "image": "./images/peach.jpg"
+                },
+                {
+                    "id": 16,
+                    "name": "Banana",
+                    "description": "Curved smiles in yellow peel",
+                    "price": 200,
+                    "image": "./images/banana.jpg"
+                },
+                {
+                    "id": 17,
+                    "name": "Mango",
+                    "description": "Golden nectar of the tropics",
+                    "price": 400,
+                    "image": "./images/mango.jpg"
+                },
+                {
+                    "id": 18,
+                    "name": "Pomegranate",
+                    "description": "Ruby seeds packed with health",
+                    "price": 350,
+                    "image": "./images/pomegranate.jpg"
+                }
+            ]
+        },
+        {
+            "category": "Vegetables",
+            "items": [
+                {
+                    "id": 19,
+                    "name": "Carrot",
+                    "description": "Golden roots for vibrant meals",
+                    "price": 800,
+                    "image": "./images/carrot.jpg"
+                },
+                {
+                    "id": 20,
+                    "name": "Cucumber",
+                    "description": "Cool vines with crisp harvest",
+                    "price": 100,
+                    "image": "./images/cucumber.jpg"
+                },
+                {
+                    "id": 21,
+                    "name": "Potato",
+                    "description": "Earthy richness beneath soft soil",
+                    "price": 500,
+                    "image": "./images/potato.jpg"
+                },
+                {
+                    "id": 22,
+                    "name": "Tomato",
+                    "description": "Juicy gems ready for the sun",
+                    "price": 200,
+                    "image": "./images/tomato.jpg"
+                },
+                {
+                    "id": 23,
+                    "name": "Spinach",
+                    "description": "Leafy greens packed with life",
+                    "price": 150,
+                    "image": "./images/spinach.jpg"
+                },
+                {
+                    "id": 24,
+                    "name": "Bell Pepper",
+                    "description": "Crunchy bursts of garden color",
+                    "price": 180,
+                    "image": "./images/bellpepper.jpg"
+                },
+                {
+                    "id": 25,
+                    "name": "Broccoli",
+                    "description": "Tiny green trees of power",
+                    "price": 200,
+                    "image": "./images/broccoli.jpg"
+                },
+                {
+                    "id": 26,
+                    "name": "Cauliflower",
+                    "description": "White florets of gentle crunch",
+                    "price": 220,
+                    "image": "./images/cauliflower.jpg"
+                }
+            ]
+        },
+        {
+            "category": "Herbs",
+            "items": [
+                {
+                    "id": 27,
+                    "name": "Basil",
+                    "description": "Aromatic leaves of Italian charm",
+                    "price": 120,
+                    "image": "./images/basil.jpg"
+                },
+                {
+                    "id": 28,
+                    "name": "Mint",
+                    "description": "Fresh coolness in every sprout",
+                    "price": 100,
+                    "image": "./images/mint.jpg"
+                },
+                {
+                    "id": 29,
+                    "name": "Cilantro",
+                    "description": "Zesty leaf for spicy dishes",
+                    "price": 100,
+                    "image": "./images/cilantro.jpg"
+                },
+                {
+                    "id": 30,
+                    "name": "Thyme",
+                    "description": "Tiny leaves, timeless flavor",
+                    "price": 130,
+                    "image": "./images/thyme.jpg"
+                },
+                {
+                    "id": 31,
+                    "name": "Oregano",
+                    "description": "Bold seasoning from the Mediterranean",
+                    "price": 110,
+                    "image": "./images/oregano.jpg"
+                },
+                {
+                    "id": 32,
+                    "name": "Parsley",
+                    "description": "Leafy accent for culinary art",
+                    "price": 100,
+                    "image": "./images/parsley.jpg"
+                },
+                {
+                    "id": 33,
+                    "name": "Dill",
+                    "description": "Feathery greens with a citrus twist",
+                    "price": 90,
+                    "image": "./images/dill.jpg"
+                }
+            ]
+        },
+        {
+            "category": "Succulents",
+            "items": [
+                {
+                    "id": 34,
+                    "name": "Aloe Vera",
+                    "description": "Healing green with spiky grace",
+                    "price": 300,
+                    "image": "./images/aloe.jpg"
+                },
+                {
+                    "id": 35,
+                    "name": "Echeveria",
+                    "description": "Rosette of soft pastel charm",
+                    "price": 250,
+                    "image": "./images/echeveria.jpg"
+                },
+                {
+                    "id": 36,
+                    "name": "Jade Plant",
+                    "description": "Chubby leaves of fortune's charm",
+                    "price": 350,
+                    "image": "./images/jade.jpg"
+                },
+                {
+                    "id": 37,
+                    "name": "Zebra Plant",
+                    "description": "Striped and fierce yet friendly",
+                    "price": 280,
+                    "image": "./images/zebra.jpg"
+                },
+                {
+                    "id": 38,
+                    "name": "Haworthia",
+                    "description": "Mini spikes of green elegance",
+                    "price": 200,
+                    "image": "./images/haworthia.jpg"
+                },
+                {
+                    "id": 39,
+                    "name": "Panda Plant",
+                    "description": "Fuzzy leaves with a touch of wild",
+                    "price": 240,
+                    "image": "./images/panda.jpg"
+                },
+                {
+                    "id": 40,
+                    "name": "Snake Plant",
+                    "description": "Tall, stylish, and unkillable",
+                    "price": 400,
+                    "image": "./images/snakeplant.jpg"
+                }
+            ]
+        },
+        {
+            "category": "Seeds",
+            "items": [
+                {
+                    "id": 41,
+                    "name": "Sunflower Seeds",
+                    "description": "Sprout golden giants from the ground",
+                    "price": 150,
+                    "image": "./images/sunflowerseeds.jpg"
+                },
+                {
+                    "id": 42,
+                    "name": "Tomato Seeds",
+                    "description": "Grow sweet red treasures",
+                    "price": 130,
+                    "image": "./images/tomatoseeds.jpg"
+                },
+                {
+                    "id": 43,
+                    "name": "Coriander Seeds",
+                    "description": "Spice or sprout — nature’s dual gift",
+                    "price": 100,
+                    "image": "./images/corianderseeds.jpg"
+                },
+                {
+                    "id": 44,
+                    "name": "Chili Seeds",
+                    "description": "For those who like it hot",
+                    "price": 120,
+                    "image": "./images/chiliseeds.jpg"
+                },
+                {
+                    "id": 45,
+                    "name": "Pumpkin Seeds",
+                    "description": "Bold vines from tiny gems",
+                    "price": 160,
+                    "image": "./images/pumpkinseeds.jpg"
+                },
+                {
+                    "id": 46,
+                    "name": "Okra Seeds",
+                    "description": "Lady fingers ready to grow",
+                    "price": 140,
+                    "image": "./images/okraseeds.jpg"
+                },
+                {
+                    "id": 47,
+                    "name": "Bitter Gourd Seeds",
+                    "description": "Bold bitterness with healing vibes",
+                    "price": 150,
+                    "image": "./images/bittergourdseeds.jpg"
+                },
+                {
+                    "id": 48,
+                    "name": "Zucchini Seeds",
+                    "description": "Sleek squash for the grill kings",
+                    "price": 170,
+                    "image": "./images/zucchiniseeds.jpg"
+                },
+                {
+                    "id": 49,
+                    "name": "Cabbage Seeds",
+                    "description": "Bundle up layers of green",
+                    "price": 110,
+                    "image": "./images/cabbageseeds.jpg"
+                },
+                {
+                    "id": 50,
+                    "name": "Fenugreek Seeds",
+                    "description": "Tiny seeds with ancient strength",
+                    "price": 90,
+                    "image": "./images/fenugreekseeds.jpg"
+                }
+            ]
+        }
+    ]
+}
