@@ -13,7 +13,7 @@ const Loader = ({ onFinish }) => {
     }, 3000); // fake loading time (replace with real condition if needed)
 
     return () => clearTimeout(timeout);
-  }, []);
+  });
 
   return (
     <div className={`loader-screen ${animateOut ? "exit" : ""}`}>

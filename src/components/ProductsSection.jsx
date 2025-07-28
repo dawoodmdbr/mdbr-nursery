@@ -1,4 +1,3 @@
-import {useState, useEffect} from "react";
 import "./ProductsSection.css";
 import {useCart} from "../context/CartContext";
 
