@@ -4,8 +4,8 @@ import Header from "./components/Header";
 import LandingSection from "./components/LandingSection";
 import ProductsSection from "./components/ProductsSection";
 import CartSidebar from "./components/CartSidebar";
-import {Quantum} from "ldrs/react";
-import "ldrs/react/Quantum.css";
+import {DotStream} from "ldrs/react";
+import "ldrs/react/DotStream.css";
 
 function App() {
     const [isCartOpen, setIsCartOpen] = useState(false);
@@ -42,7 +42,7 @@ function App() {
 
             {loading && (
                 <div className='loader-wrapper'>
-                    <Quantum size='95' speed='1.75' color='white' />
+                    <DotStream size='60' speed='2.5' color='black' />
                 </div>
             )}
 
