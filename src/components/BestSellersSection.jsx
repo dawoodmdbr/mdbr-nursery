@@ -1,16 +1,15 @@
 import {useMemo} from "react";
 import {useCart} from "../context/CartContext";
 import "../styles/ProductsSection.css";
-import "../styles/BestSellersSection.css"
 
 const BestSellersSection = ({products}) => {
     const {cartItems, addToCart} = useCart();
 
     const bestSellers = useMemo(() => {
         const allItems = products.flatMap((category) => category.items);
-        const shuffled = [...allItems].sort(() => 0.5 - Math.random());
-        return shuffled.slice(0, 6);
-    }, [products]);
+        const sorted = allItems.sort((a, b) => b.sold - a.sold);
+        return sorted.slice(0, 6);
+    }, []);
 
     return (
         <div className='products'>
@@ -23,7 +22,6 @@ const BestSellersSection = ({products}) => {
                             <img src={plant.image} alt={plant.name} />
                             <div className='product-text'>
                                 <h1>{plant.name}</h1>
-                                <p className='desc'>{plant.description}</p>
                                 <h1 className='price'>Rs. {plant.price}</h1>
                             </div>
                         </div>

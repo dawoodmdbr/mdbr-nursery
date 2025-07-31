@@ -11,7 +11,7 @@ const ProductsSection = ({ products }) => {
                 <h1>Products</h1>
                 <div className='category-blocks'>
                     {products.map((categoryBlock) => (
-                        <div className='category-block' key={categoryBlock.category}>
+                        <div className='category-block' id={categoryBlock.category} key={categoryBlock.category}>
                             <h2 className='category-title'>{categoryBlock.category}</h2>
                             <div className='products-section'>
                                 {categoryBlock.items.map((plant) => (
