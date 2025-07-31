@@ -1,4 +1,4 @@
-import "./ProductsSection.css";
+import "../styles/ProductsSection.css";
 import {useCart} from "../context/CartContext";
 
 const ProductsSection = ({ products }) => {

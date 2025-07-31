@@ -1,8 +1,9 @@
 import {useState, useEffect} from "react";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
-import LandingSection from "./components/LandingSection";
-import ProductsSection from "./components/ProductsSection";
+import LandingPage from "./pages/LandingPage";
+import ProductsPage from "./pages/ProductsPage";
 import CartSidebar from "./components/CartSidebar";
 import {DotStream} from "ldrs/react";
 import "ldrs/react/DotStream.css";
@@ -47,16 +48,20 @@ function App() {
             )}
 
             {!loading && (
-                <>
+                <Router basename='/mdbr-nursery/'>
                     <Header toggleCart={() => setIsCartOpen(true)} />
+
                     <main>
-                        <LandingSection onImageLoad={() => setLoading(false)} />
-                        <ProductsSection products={products} />
+                        <Routes>
+                            <Route path='/' element={<LandingPage products={products} />} />
+                            <Route path='/products' element={<ProductsPage products={products} />} />
+                        </Routes>
                     </main>
+
                     {isCartOpen && <div className='backdrop' onClick={() => setIsCartOpen(false)} />}
                     {isCartOpen && <CartSidebar onClose={() => setIsCartOpen(false)} />}
                     <CartSidebar onClose={() => setIsCartOpen(false)} isOpen={isCartOpen} />
-                </>
+                </Router>
             )}
         </>
     );

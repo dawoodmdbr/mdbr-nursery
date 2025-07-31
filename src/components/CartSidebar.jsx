@@ -1,4 +1,4 @@
-import "./CartSidebar.css";
+import "../styles/CartSidebar.css";
 import { useCart } from "../context/CartContext";
 
 const CartSidebar = ({ onClose, isOpen }) => {

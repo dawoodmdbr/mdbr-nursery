@@ -1,4 +1,4 @@
-.landing {
+.hero {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -10,37 +10,42 @@
     color: #f6fef9; /* match sidebar bg text color */
 }
 
-.landing-image {
+.hero-image {
     position: absolute;
     inset: 0;
     z-index: -1;
 }
 
-.landing-image img {
+.hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: brightness(0.5); /* more contrast */
 }
 
-.landing-text {
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-width: 900px;
     text-align: center;
     padding: 0 2rem;
 }
 
-.landing h1 {
+.hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 1rem;
     color: #f6fef9; /* light greenish white */
 }
 
-.landing p {
+.hero p {
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.25rem;
+    font-size: 1rem;
+    max-width: 30rem;
     font-weight: 400;
     opacity: 0.95;
     margin-bottom: 2.5rem;
@@ -51,15 +56,21 @@
 .get-started-btn {
     font-family: 'Work Sans', sans-serif;
     font-weight: 600;
-    padding: 1rem 6rem;
-    font-size: 1rem;
-    background-color: rgba(59, 127, 86, 0.2); /* match cart-btn green with transparency */
+    text-decoration: none;
+    padding: 1.5rem 5vw;
+    font-size: 1.5rem;
+    background-color: rgba(59, 127, 86, 0.25); /* match cart-btn green with transparency */
     border: 2px solid #3b7f56;
     color: #f6fef9;
     border-radius: 2rem;
     cursor: pointer;
     transition: all 0.3s ease;
     backdrop-filter: blur(10px);
+}
+
+a{
+    color: #f6fef9;
+    text-decoration: none;
 }
 
 .get-started-btn:hover {

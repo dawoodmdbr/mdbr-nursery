@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./Loader.css";
+import "../styles/Loader.css";
 
 const Loader = ({ onFinish }) => {
   const [animateOut, setAnimateOut] = useState(false);

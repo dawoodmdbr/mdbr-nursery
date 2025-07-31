@@ -51,11 +51,25 @@
     text-decoration: none;
     padding: 1rem;
     transition: all 200ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #f6fef9; /* light greenish white */
+    margin-left: 0.5rem;
+}
+
+.logo img{
+    height: 3rem;
+    width: 3rem;
 }
 
 .prod-btn {
-    font-family: 'Playfair Display', serif;
-    font-weight: 100;
+    font-weight: 500;
     text-decoration: none;
     padding: 1rem;
 }
@@ -86,5 +100,23 @@
     transition: all 200ms ease-in-out;
     &:hover {
         transform: scale(1.1);
+    }
+}
+
+.mobile{
+    display: none;
+}
+
+
+
+@media (max-width:425px) {
+    .pc{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+    .logo{
+        padding: 0rem 1rem;
     }
 }
