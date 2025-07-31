@@ -1,7 +1,7 @@
 # MDBR Nursery
 
-**Live Demo:** [Click here](https://your-deployment-url.com)
-**GitHub Repo:** [Click here](https://github.com/yourusername/mdbr-nursery)
+**Live Demo:** [Click here](https://dawoodmdbr.github.io/mdbr-nursery)
+**GitHub Repo:** [Click here](https://github.com/dawoodmdbr/mdbr-nursery)
 
 ## 🌱 Overview
 
@@ -89,7 +89,7 @@ src/
 ## 🚀 How to Run Locally
 
 ```bash
-git clone https://github.com/yourusername/mdbr-nursery.git
+git clone https://github.com/dawoodmdbr/mdbr-nursery.git
 cd mdbr-nursery
 npm install
 npm run dev
