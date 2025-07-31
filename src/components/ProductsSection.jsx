@@ -1,14 +1,13 @@
 import "../styles/ProductsSection.css";
 import {useCart} from "../context/CartContext";
+import toast from "react-hot-toast";
 
-const ProductsSection = ({ products }) => {
-    const {cartItems, addToCart} = useCart();   
-
+const ProductsSection = ({products}) => {
+    const {cartItems, addToCart} = useCart();
 
     return (
         <>
             <section id='products' className='products'>
-                <h1>Products</h1>
                 <div className='category-blocks'>
                     {products.map((categoryBlock) => (
                         <div className='category-block' id={categoryBlock.category} key={categoryBlock.category}>
@@ -24,12 +23,17 @@ const ProductsSection = ({ products }) => {
                                                 <h1 className='price'>Rs. {plant.price}</h1>
                                             </div>
                                         </div>
-                                        <div
-                                            className='add-btn'
-                                            onClick={() => addToCart(plant)}
+                                        <button
+                                            className={
+                                                `add-btn` + (cartItems.some((item) => item.id === plant.id) ? " added" : "")
+                                            }
+                                            onClick={() => {
+                                                addToCart(plant);
+                                                toast.success(`${plant.name} added to cart!`);
+                                            }}
                                             disabled={cartItems.some((item) => item.id === plant.id)}>
                                             {cartItems.some((item) => item.id === plant.id) ? "Added" : "Add to Cart"}
-                                        </div>
+                                        </button>
                                     </div>
                                 ))}
                             </div>

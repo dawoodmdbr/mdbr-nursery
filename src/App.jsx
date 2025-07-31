@@ -1,12 +1,14 @@
 import {useState, useEffect} from "react";
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import {Toaster} from "react-hot-toast";
 import "./App.css";
-import Header from "./components/Header";
+import NavBar from "./components/NavBar";
 import LandingPage from "./pages/LandingPage";
 import ProductsPage from "./pages/ProductsPage";
 import CartSidebar from "./components/CartSidebar";
 import {DotStream} from "ldrs/react";
 import "ldrs/react/DotStream.css";
+import Footer from "./components/Footer";
 
 function App() {
     const [isCartOpen, setIsCartOpen] = useState(false);
@@ -39,7 +41,10 @@ function App() {
 
     return (
         <>
+            <Toaster position='top-right' toastOptions={{duration: 2000}} />
             <div id='custom-cursor' className='frosted-cursor'></div>
+
+
 
             {loading && (
                 <div className='loader-wrapper'>
@@ -49,13 +54,14 @@ function App() {
 
             {!loading && (
                 <Router basename='/mdbr-nursery/'>
-                    <Header toggleCart={() => setIsCartOpen(true)} />
+                    <NavBar toggleCart={() => setIsCartOpen(true)} />
 
                     <main>
                         <Routes>
                             <Route path='/' element={<LandingPage products={products} />} />
                             <Route path='/products' element={<ProductsPage products={products} />} />
                         </Routes>
+                        <Footer/>
                     </main>
 
                     {isCartOpen && <div className='backdrop' onClick={() => setIsCartOpen(false)} />}

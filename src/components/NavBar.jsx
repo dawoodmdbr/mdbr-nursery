@@ -1,9 +1,9 @@
-import "../styles/Header.css";
+import "../styles/NavBar.css";
 import {Link} from "react-router-dom";
 import {useCart} from "../context/CartContext";
 import Logo from "/logo.png"
 
-const Header = ({toggleCart}) => {
+const NavBar = ({toggleCart}) => {
     const {getTotalItems} = useCart();
 
     return (
@@ -52,4 +52,4 @@ const Header = ({toggleCart}) => {
     );
 };
 
-export default Header;
+export default NavBar;

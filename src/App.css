@@ -2,6 +2,10 @@
   cursor: none !important;
 }
 
+body{
+  background-color: #F9F6EF;
+}
+
 .loader-wrapper {
   position: fixed;
   top: 0;

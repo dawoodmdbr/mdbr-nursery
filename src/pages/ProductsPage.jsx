@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import ProductsSection from "./../components/ProductsSection";
 import {DotStream} from "ldrs/react";
 import "ldrs/react/DotStream.css";
+import ProductsHeader from "../components/ProductsHeader";
 
 const ProductsPage = () => {
     const [loading, setLoading] = useState(true);
@@ -28,7 +29,12 @@ const ProductsPage = () => {
                     <DotStream size='60' speed='2.5' color='black' />
                 </div>
             )}
-            {!loading && <ProductsSection products={products} />}
+            {!loading && 
+            <>
+            <ProductsHeader/>
+            <ProductsSection products={products} />
+            </>
+            }
         </>
     );
 };
