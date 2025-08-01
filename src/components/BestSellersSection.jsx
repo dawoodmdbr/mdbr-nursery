@@ -1,4 +1,5 @@
 import {useMemo} from "react";
+import {toast} from "react-hot-toast";
 import {Link} from "react-router-dom";
 import {useCart} from "../context/CartContext";
 import "../styles/ProductsSection.css";
@@ -29,17 +30,22 @@ const BestSellersSection = ({products}) => {
                             </div>
                             <button
                                 className={`add-btn` + (cartItems.some((item) => item.id === plant.id) ? " added" : "")}
-                                onClick={() => addToCart(plant)}
+                                onClick={() => {
+                                    addToCart(plant);
+                                    toast.success(`${plant.name} added to cart!`);
+                                }}
                                 disabled={cartItems.some((item) => item.id === plant.id)}>
                                 {cartItems.some((item) => item.id === plant.id) ? "Added" : "Add to Cart"}
                             </button>
                         </div>
                     ))}
                 </div>
-                
-            <Link to={"/products"}>
-                <button className='get-started-btn' style={{marginTop: "2rem", backgroundColor: "#3b7f56"}}>See More...</button>
-            </Link>
+
+                <Link to={"/products"}>
+                    <button className='get-started-btn' style={{marginTop: "2rem", backgroundColor: "#3b7f56"}}>
+                        See More...
+                    </button>
+                </Link>
             </div>
         </>
     );
