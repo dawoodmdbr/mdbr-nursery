@@ -1,57 +1,227 @@
 {
-  "Products": [
-    {
-      "category": "Flowers",
-      "items": [
-        { "id": 1, "name": "Daisy", "description": "Petals of innocence and charm", "price": 80, "image": "./images/daisy.jpg", "sold": 35 },
-        { "id": 2, "name": "Marigold", "description": "Radiant bloom with sacred hues", "price": 60, "image": "./images/marigold.jpg", "sold": 42 },
-        { "id": 3, "name": "Lily of the Valley", "description": "Fragrant bells of delicate grace", "price": 120, "image": "./images/lily.jpg", "sold": 28 },
-        { "id": 4, "name": "Sunflower", "description": "Golden faces chasing warm skies", "price": 70, "image": "./images/sunflower.jpg", "sold": 50 },
-        { "id": 5, "name": "Tulip", "description": "Elegant curves in quiet bloom", "price": 110, "image": "./images/tulip.jpg", "sold": 30 },
-        { "id": 6, "name": "Rose", "description": "Timeless elegance wrapped in velvet", "price": 150, "image": "./images/rose.jpg", "sold": 70 },
-        { "id": 7, "name": "Orchid", "description": "Exotic flair in royal bloom", "price": 200, "image": "./images/orchid.jpg", "sold": 18 },
-        { "id": 8, "name": "Lavender", "description": "Soft purple calm in every stem", "price": 130, "image": "./images/lavender.jpg", "sold": 40 },
-        { "id": 9, "name": "Peony", "description": "Fluffy layers of spring romance", "price": 180, "image": "./images/peony.jpg", "sold": 22 }
-      ]
-    },
-    {
-      "category": "Fruits",
-      "items": [
-        { "id": 10, "name": "Strawberry", "description": "Sweet blush of summer dreams", "price": 300, "image": "./images/strawberry.jpg", "sold": 55 },
-        { "id": 11, "name": "Watermelon", "description": "Crimson delight under green armor", "price": 180, "image": "./images/watermelon.jpg", "sold": 48 },
-        { "id": 12, "name": "Raspberry", "description": "Tangy jewels kissed by mist", "price": 350, "image": "./images/raspberry.jpg", "sold": 22 },
-        { "id": 13, "name": "Apple", "description": "Crisp bite of orchard grace", "price": 150, "image": "./images/apple.jpg", "sold": 60 },
-        { "id": 14, "name": "Blueberry", "description": "Tiny bursts of twilight flavor", "price": 320, "image": "./images/blueberry.jpg", "sold": 25 },
-        { "id": 15, "name": "Peach", "description": "Fuzzy sweetness from golden boughs", "price": 240, "image": "./images/peach.jpg", "sold": 38 },
-        { "id": 16, "name": "Banana", "description": "Curved smiles in yellow peel", "price": 100, "image": "./images/banana.jpg", "sold": 75 },
-        { "id": 17, "name": "Mango", "description": "Golden nectar of the tropics", "price": 400, "image": "./images/mango.jpg", "sold": 63 },
-        { "id": 18, "name": "Pomegranate", "description": "Ruby seeds packed with health", "price": 280, "image": "./images/pomegranate.jpg", "sold": 33 }
-      ]
-    },
-    {
-      "category": "Vegetables",
-      "items": [
-        { "id": 19, "name": "Carrot", "description": "Golden roots for vibrant meals", "price": 90, "image": "./images/carrot.jpg", "sold": 52 },
-        { "id": 20, "name": "Cucumber", "description": "Cool vines with crisp harvest", "price": 60, "image": "./images/cucumber.jpg", "sold": 44 },
-        { "id": 21, "name": "Potato", "description": "Earthy richness beneath soft soil", "price": 70, "image": "./images/potato.jpg", "sold": 90 },
-        { "id": 22, "name": "Tomato", "description": "Juicy gems ready for the sun", "price": 80, "image": "./images/tomato.jpg", "sold": 66 },
-        { "id": 23, "name": "Spinach", "description": "Leafy greens packed with life", "price": 60, "image": "./images/spinach.jpg", "sold": 35 },
-        { "id": 24, "name": "Bell Pepper", "description": "Crunchy bursts of garden color", "price": 120, "image": "./images/bellpepper.jpg", "sold": 30 },
-        { "id": 25, "name": "Broccoli", "description": "Tiny green trees of power", "price": 140, "image": "./images/broccoli.jpg", "sold": 24 },
-        { "id": 26, "name": "Cauliflower", "description": "White florets of gentle crunch", "price": 130, "image": "./images/cauliflower.jpg", "sold": 28 }
-      ]
-    },
-    {
-      "category": "Herbs",
-      "items": [
-        { "id": 27, "name": "Basil", "description": "Aromatic leaves of Italian charm", "price": 50, "image": "./images/basil.jpg", "sold": 45 },
-        { "id": 28, "name": "Mint", "description": "Fresh coolness in every sprout", "price": 40, "image": "./images/mint.jpg", "sold": 53 },
-        { "id": 29, "name": "Cilantro", "description": "Zesty leaf for spicy dishes", "price": 35, "image": "./images/cilantro.jpg", "sold": 49 },
-        { "id": 30, "name": "Thyme", "description": "Tiny leaves, timeless flavor", "price": 60, "image": "./images/thyme.jpg", "sold": 28 },
-        { "id": 31, "name": "Oregano", "description": "Bold seasoning from the Mediterranean", "price": 55, "image": "./images/oregano.jpg", "sold": 31 },
-        { "id": 32, "name": "Parsley", "description": "Leafy accent for culinary art", "price": 30, "image": "./images/parsley.jpg", "sold": 39 },
-        { "id": 33, "name": "Dill", "description": "Feathery greens with a citrus twist", "price": 50, "image": "./images/dill.jpg", "sold": 26 }
-      ]
-    }
-  ]
+    "Products": [
+        {
+            "category": "Flowers",
+            "items": [
+                {
+                    "id": 1,
+                    "name": "Daisy",
+                    "description": "Petals of innocence and charm",
+                    "price": 80,
+                    "image": "./images/daisy.jpg",
+                    "sold": 35
+                },
+                {
+                    "id": 2,
+                    "name": "Marigold",
+                    "description": "Radiant bloom with sacred hues",
+                    "price": 60,
+                    "image": "./images/marigold.jpg",
+                    "sold": 42
+                },
+                {
+                    "id": 3,
+                    "name": "Lily",
+                    "description": "Fragrant bells of delicate grace",
+                    "price": 120,
+                    "image": "./images/lily.jpg",
+                    "sold": 28
+                },
+                {
+                    "id": 4,
+                    "name": "Sunflower",
+                    "description": "Golden faces chasing warm skies",
+                    "price": 70,
+                    "image": "./images/sunflower.jpg",
+                    "sold": 50
+                },
+                {
+                    "id": 5,
+                    "name": "Tulip",
+                    "description": "Elegant curves in quiet bloom",
+                    "price": 110,
+                    "image": "./images/tulip.jpg",
+                    "sold": 30
+                },
+                {
+                    "id": 6,
+                    "name": "Rose",
+                    "description": "Timeless elegance wrapped in velvet",
+                    "price": 150,
+                    "image": "./images/rose.jpg",
+                    "sold": 70
+                },
+                {
+                    "id": 7,
+                    "name": "Orchid",
+                    "description": "Exotic flair in royal bloom",
+                    "price": 200,
+                    "image": "./images/orchid.jpg",
+                    "sold": 18
+                },
+                {
+                    "id": 8,
+                    "name": "Lavender",
+                    "description": "Soft purple calm in every stem",
+                    "price": 130,
+                    "image": "./images/lavender.jpg",
+                    "sold": 40
+                },
+                {
+                    "id": 9,
+                    "name": "Peony",
+                    "description": "Fluffy layers of spring romance",
+                    "price": 180,
+                    "image": "./images/peony.jpg",
+                    "sold": 22
+                }
+            ]
+        },
+        {
+            "category": "Fruits",
+            "items": [
+                {
+                    "id": 10,
+                    "name": "Strawberry",
+                    "description": "Sweet blush of summer dreams",
+                    "price": 300,
+                    "image": "./images/strawberry.jpg",
+                    "sold": 55
+                },
+                {
+                    "id": 11,
+                    "name": "Watermelon",
+                    "description": "Crimson delight under green armor",
+                    "price": 180,
+                    "image": "./images/watermelon.jpg",
+                    "sold": 48
+                },
+                {
+                    "id": 12,
+                    "name": "Raspberry",
+                    "description": "Tangy jewels kissed by mist",
+                    "price": 350,
+                    "image": "./images/raspberry.jpg",
+                    "sold": 22
+                },
+                {
+                    "id": 13,
+                    "name": "Apple",
+                    "description": "Crisp bite of orchard grace",
+                    "price": 150,
+                    "image": "./images/apple.jpg",
+                    "sold": 60
+                },
+                {
+                    "id": 14,
+                    "name": "Blueberry",
+                    "description": "Tiny bursts of twilight flavor",
+                    "price": 320,
+                    "image": "./images/blueberry.jpg",
+                    "sold": 25
+                },
+                {
+                    "id": 15,
+                    "name": "Peach",
+                    "description": "Fuzzy sweetness from golden boughs",
+                    "price": 240,
+                    "image": "./images/peach.jpg",
+                    "sold": 38
+                },
+                {
+                    "id": 16,
+                    "name": "Banana",
+                    "description": "Curved smiles in yellow peel",
+                    "price": 100,
+                    "image": "./images/banana.jpg",
+                    "sold": 75
+                },
+                {
+                    "id": 17,
+                    "name": "Mango",
+                    "description": "Golden nectar of the tropics",
+                    "price": 400,
+                    "image": "./images/mango.jpg",
+                    "sold": 63
+                },
+                {
+                    "id": 18,
+                    "name": "Pomegranate",
+                    "description": "Ruby seeds packed with health",
+                    "price": 280,
+                    "image": "./images/pomegranate.jpg",
+                    "sold": 33
+                }
+            ]
+        },
+        {
+            "category": "Vegetables",
+            "items": [
+                {
+                    "id": 19,
+                    "name": "Carrot",
+                    "description": "Golden roots for vibrant meals",
+                    "price": 90,
+                    "image": "./images/carrot.jpg",
+                    "sold": 52
+                },
+                {
+                    "id": 20,
+                    "name": "Cucumber",
+                    "description": "Cool vines with crisp harvest",
+                    "price": 60,
+                    "image": "./images/cucumber.jpg",
+                    "sold": 44
+                },
+                {
+                    "id": 21,
+                    "name": "Potato",
+                    "description": "Earthy richness beneath soft soil",
+                    "price": 70,
+                    "image": "./images/potato.jpg",
+                    "sold": 90
+                },
+                {
+                    "id": 22,
+                    "name": "Tomato",
+                    "description": "Juicy gems ready for the sun",
+                    "price": 80,
+                    "image": "./images/tomato.jpg",
+                    "sold": 66
+                },
+                {
+                    "id": 23,
+                    "name": "Spinach",
+                    "description": "Leafy greens packed with life",
+                    "price": 60,
+                    "image": "./images/spinach.jpg",
+                    "sold": 35
+                },
+                {
+                    "id": 24,
+                    "name": "Bell Pepper",
+                    "description": "Crunchy bursts of garden color",
+                    "price": 120,
+                    "image": "./images/bellpepper.jpg",
+                    "sold": 30
+                },
+                {
+                    "id": 25,
+                    "name": "Broccoli",
+                    "description": "Tiny green trees of power",
+                    "price": 140,
+                    "image": "./images/broccoli.jpg",
+                    "sold": 24
+                },
+                {
+                    "id": 26,
+                    "name": "Cauliflower",
+                    "description": "White florets of gentle crunch",
+                    "price": 130,
+                    "image": "./images/cauliflower.jpg",
+                    "sold": 28
+                }
+            ]
+        }
+    ]
 }
