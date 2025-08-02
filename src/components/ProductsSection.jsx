@@ -1,20 +1,40 @@
-import "../styles/ProductsSection.css";
+import {useState} from "react";
 import {useCart} from "../context/CartContext";
 import toast from "react-hot-toast";
+import "../styles/ProductsSection.css";
 
 const ProductsSection = ({products}) => {
     const {cartItems, addToCart} = useCart();
+    const [selectedCategory, setSelectedCategory] = useState("All");
+
+    const categoryNames = ["All", ...products.map((p) => p.category)];
+    const filteredProducts = selectedCategory === "All" ? products : products.filter((p) => p.category === selectedCategory);
 
     return (
         <>
             <section id='products' className='products'>
+                <div className='filter-chips'>
+                    {categoryNames.map((category) => (
+                        <button
+                            key={category}
+                            className={`chip-btn ${selectedCategory === category ? "active" : ""}`}
+                            onClick={() => setSelectedCategory(category)}>
+                            {category}
+                        </button>
+                    ))}
+                </div>
                 <div className='category-blocks'>
-                    {products.map((categoryBlock) => (
+                    {filteredProducts.map((categoryBlock) => (
                         <div className='category-block' id={categoryBlock.category} key={categoryBlock.category}>
                             <h2 className='category-title'>{categoryBlock.category}</h2>
                             <div className='products-section'>
                                 {categoryBlock.items.map((plant) => (
-                                    <div className='product-card' key={plant.id}>
+                                    <div
+                                        className='product-card'
+                                        onClick={(e) => {
+                                            e.currentTarget.classList.add("vine");
+                                        }}
+                                        key={plant.id}>
                                         <div className='product-info'>
                                             <img src={plant.image} alt={plant.name} />
                                             <div className='product-text'>

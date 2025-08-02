@@ -12,6 +12,37 @@
     /* brand green */
 }
 
+
+.filter-chips {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.chip-btn {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #3b7f56;
+    background-color: transparent;
+    color: #3b7f56;
+    font-weight: 600;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.chip-btn:hover {
+    background-color: #3b7f56;
+    color: white;
+}
+
+.chip-btn.active {
+    background-color: #3b7f56;
+    color: white;
+}
+
+
 .category-blocks {
     margin: 2rem auto;
     display: flex;
@@ -37,7 +68,7 @@
 
 .products .products-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
     padding: 1rem;
 }
@@ -53,13 +84,29 @@
     border: 1px solid #3b7f56;
     position: relative;
     padding-bottom: 2rem;
+    overflow: hidden;
 }
 
 
 .product-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0.625rem 1.5rem rgba(0, 0, 0, 0.25);
-    background-color: rgba(59, 127, 86, 0.25);
+    transition: all 0.3s ease;
+    /* transform: scale(1.05); */
+    animation: scaleJump 1s forwards;
+    /* animation: floatLeaf 1s ease-in-out infinite; */  
+}
+
+@keyframes scaleJump {
+    0% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1.025);
+    }
+
+    100% {
+        transform: translateY(-1rem) scale(1.1);
+    }
 }
 
 .product-info {
@@ -124,7 +171,7 @@
     bottom: 0;
 }
 
-.add-btn.added{
+.add-btn.added {
     background-color: #3b7f56;
     color: #F9F6EF;
 }
@@ -137,6 +184,7 @@
     border-top-color: #2f6445;
     /* dark green accent */
 }
+
 /* 💻 4K and wider */
 @media (min-width: 1921px) {
     .products .products-section {
@@ -155,14 +203,6 @@
     }
 }
 
-/* 📱 Tablets and small laptops */
-@media (max-width: 1024px) {
-    .products .products-section {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-/* 📱 Mobiles */
 @media (max-width: 768px) {
     .products {
         padding: 0 1rem;
@@ -213,3 +253,5 @@
         padding: 0.5rem 1rem;
     }
 }
+
+
