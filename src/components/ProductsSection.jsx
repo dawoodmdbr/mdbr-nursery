@@ -1,7 +1,7 @@
-import {useState} from "react";
+import "../styles/ProductsSection.css";
+import { useState } from "react";
 import {useCart} from "../context/CartContext";
 import toast from "react-hot-toast";
-import "../styles/ProductsSection.css";
 
 const ProductsSection = ({products}) => {
     const {cartItems, addToCart} = useCart();
@@ -31,8 +31,8 @@ const ProductsSection = ({products}) => {
                                 {categoryBlock.items.map((plant) => (
                                     <div
                                         className='product-card'
-                                        onClick={(e) => {
-                                            e.currentTarget.classList.add("vine");
+                                        onClick={() => {
+                                            classList.add("vine");
                                         }}
                                         key={plant.id}>
                                         <div className='product-info'>
