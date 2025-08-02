@@ -20,13 +20,13 @@ const ProductsPage = () => {
                     console.error("Error fetching products:", err);
                     setLoading(false);
                 });
-        }, 500);
+        }, 0);
     }, []);
     return (
         <>
             {loading && (
                 <div className='loader-wrapper'>
-                    <DotStream size='60' speed='2.5' color='black' />
+                    <DotStream size='150' speed='1.5' color='black' />
                 </div>
             )}
             {!loading && 

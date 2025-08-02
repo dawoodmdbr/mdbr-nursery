@@ -222,67 +222,6 @@
                     "sold": 28
                 }
             ]
-        },
-        {
-            "category": "Herbs",
-            "items": [
-                {
-                    "id": 27,
-                    "name": "Basil",
-                    "description": "Aromatic leaves of Italian charm",
-                    "price": 50,
-                    "image": "./images/basil.jpg",
-                    "sold": 45
-                },
-                {
-                    "id": 28,
-                    "name": "Mint",
-                    "description": "Fresh coolness in every sprout",
-                    "price": 40,
-                    "image": "./images/mint.jpg",
-                    "sold": 53
-                },
-                {
-                    "id": 29,
-                    "name": "Cilantro",
-                    "description": "Zesty leaf for spicy dishes",
-                    "price": 35,
-                    "image": "./images/cilantro.jpg",
-                    "sold": 49
-                },
-                {
-                    "id": 30,
-                    "name": "Thyme",
-                    "description": "Tiny leaves, timeless flavor",
-                    "price": 60,
-                    "image": "./images/thyme.jpg",
-                    "sold": 28
-                },
-                {
-                    "id": 31,
-                    "name": "Oregano",
-                    "description": "Bold seasoning from the Mediterranean",
-                    "price": 55,
-                    "image": "./images/oregano.jpg",
-                    "sold": 31
-                },
-                {
-                    "id": 32,
-                    "name": "Parsley",
-                    "description": "Leafy accent for culinary art",
-                    "price": 30,
-                    "image": "./images/parsley.jpg",
-                    "sold": 39
-                },
-                {
-                    "id": 33,
-                    "name": "Dill",
-                    "description": "Feathery greens with a citrus twist",
-                    "price": 50,
-                    "image": "./images/dill.jpg",
-                    "sold": 26
-                }
-            ]
         }
     ]
 }
