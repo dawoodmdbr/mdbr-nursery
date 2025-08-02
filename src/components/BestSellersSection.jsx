@@ -10,7 +10,7 @@ const BestSellersSection = ({products}) => {
     const bestSellers = useMemo(() => {
         const allItems = products.flatMap((category) => category.items);
         const sorted = allItems.sort((a, b) => b.sold - a.sold);
-        return sorted.slice(0, 6);
+        return sorted.slice(0, 5);
     }, [products]);
 
     return (

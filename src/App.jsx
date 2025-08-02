@@ -4,6 +4,7 @@ import {Toaster} from "react-hot-toast";
 
 import "./App.css";
 
+import FrostedCursor from "./components/FrostedCursor";
 import NavBar from "./components/NavBar";
 import LandingPage from "./pages/LandingPage";
 import ProductsPage from "./pages/ProductsPage";
@@ -47,7 +48,8 @@ function App() {
     return (
         <>
             <Toaster position='top-right' toastOptions={{duration: 2000}} />
-            <div id='custom-cursor' className='frosted-cursor'></div>
+            {/* <div id='custom-cursor' className='frosted-cursor'></div> */}
+            <FrostedCursor />
 
             {loading && (
                 <div className='loader-wrapper'>
