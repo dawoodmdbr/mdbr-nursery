@@ -87,23 +87,7 @@
 }
 .product-card:hover {
     transition: all 0.3s ease;
-    /* transform: scale(1.05); */
-    animation: scaleJump 1s forwards;
-    /* animation: floatLeaf 1s ease-in-out infinite; */
-}
-
-@keyframes scaleJump {
-    0% {
-        transform: scale(1);
-    }
-
-    80% {
-        transform: scale(1.025);
-    }
-
-    100% {
-        transform: translateY(-1rem) scale(1.1);
-    }
+    transform: scale(1.05);
 }
 
 .product-info {

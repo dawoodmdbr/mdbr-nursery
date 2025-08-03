@@ -1,0 +1,21 @@
+.see-more-btn {
+    margin-top: 2rem;
+    background-color: #3b7f56;
+}
+
+.see-more-btn:hover {
+    transform: scale(1.15);
+    background-color: #F9F6EF;
+    color: #3b7f56;
+    border-color: #3b7f56;
+}
+
+.best-sellers{
+    padding: 5rem 3rem;
+}
+
+@media (max-width:768px) {
+    .best-sellers{
+        padding: 5rem 1rem;
+    }
+}

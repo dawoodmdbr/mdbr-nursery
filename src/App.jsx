@@ -34,21 +34,11 @@ function App() {
                     setLoading(false);
                 });
         }, 0);
-
-        const cursor = document.getElementById("custom-cursor");
-
-        const moveCursor = (e) => {
-            cursor.style.transform = `translate3d(${e.clientX - 20}px, ${e.clientY - 20}px, 0)`;
-        };
-
-        window.addEventListener("mousemove", moveCursor);
-        return () => window.removeEventListener("mousemove", moveCursor);
     }, []);
 
     return (
         <>
             <Toaster position='top-right' toastOptions={{duration: 2000}} />
-            {/* <div id='custom-cursor' className='frosted-cursor'></div> */}
             <FrostedCursor />
 
             {loading && (

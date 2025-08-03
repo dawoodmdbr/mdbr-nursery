@@ -31,9 +31,6 @@ const ProductsSection = ({products}) => {
                                 {categoryBlock.items.map((plant) => (
                                     <div
                                         className='product-card'
-                                        onClick={() => {
-                                            classList.add("vine");
-                                        }}
                                         key={plant.id}>
                                         <div className='product-info'>
                                             <img src={plant.image} alt={plant.name} />
