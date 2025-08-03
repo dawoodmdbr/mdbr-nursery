@@ -33,7 +33,7 @@ function App() {
                     console.error("Error fetching products:", err);
                     setLoading(false);
                 });
-        }, 0);
+        }, 1000);
     }, []);
 
     return (
