@@ -9,19 +9,21 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 98vw;
     z-index: 1000;
     color: white;
 
     background-color: rgba(0,0,0, 0.5);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(25px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 2rem;
+
+    margin: 0.5rem 1rem;
+    border-radius: 5rem;
 
     font-size: 1.5rem;
 }
